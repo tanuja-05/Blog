@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #daaffd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Left Sidebar Navigation */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4a154f;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 20px;    
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fafafa;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #641cf4;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+}
+
+#openNav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#openNav:hover {
+  color: #ff6600;
+}
+
+/* Main Content */
+.main {
+  display: flex;
+  max-width: 1200px; 
+  margin: 0 auto;
+  background-color:#a337fc7f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.593);
+  border-radius: 5px;
+}
+
+.main .left-content {
+  width: 85%;
+  padding: 30px;
+}
+
+.technology-section {
+  background-color: #c7b7ea;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.technology-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.technology-article {
+  margin-bottom: 20px;
+}
+
+.technology-article h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.technology-article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.post {
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative; /* Create a relative positioning context for hover effect */
+}
+
+.post-image {
+  width: 300px;
+  height: 150px;
+  border: 3px solid #fff; /* Add a border with white color */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin: 0 10px 0; /* Add spacing around the image */
+  opacity: 0.3; /* Set initial opacity */
+  transition: opacity 0.3s; /* Add a smooth transition for the hover effect */
+}
+
+.posts:hover .post-image {
+  opacity: 1; /* Increase opacity on hover */
+}
+
+/* Add your CSS styles here */
+.lifestyle-section {
+  background-color:#c7b7ea;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.lifestyle-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lifestyle-article {
+  margin-bottom: 20px;
+}
+
+.lifestyle-article h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.lifestyle-article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.featured-post {
+  background-color: #9b62d0;
+  
+  padding: 20px;
+  border-radius: 5px;
+  
+}
+
+.featured-image {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff; /* Add an attractive border */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin: 10px 0; /* Add spacing between image and text */
+}
+
+/* Scroll-triggered Navigation Bar */
+.scrollnav {
+  display: none;
+}
+
+.featured-post h1 {
+    text-align: left;
+  font-size: 45px;
+  color: black;
+}
+
+.featured-post p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: black;
+}
+
+/* Blog Sections */
+.blog-section {
+  margin-top: 30px;
+}
+
+.blog-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.blog-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Comments Section Styling */
+.comments-section {
+  margin-top: 30px;
+}
+
+.comments-section h2 {
+  color: aliceblue;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#comment-form {
+  border: 1px solid #e0e0e0;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #ff2f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(246, 188, 243);
+}
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ff2f00;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+
+.hehe{
+    display: inline-block;
+    color: rgb(67, 36, 39);
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.techlink{
+    color:rgb(41, 2, 2);
+}
+.techlink:hover{
+    color: #323968;
+    
+}
+.blog-section>h1{
+    color: rgb(0, 0, 0);
+}
